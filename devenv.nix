@@ -6,6 +6,8 @@
   packages = with pkgs; [
     git
     gnumake
+    # needed for all numworks projects
+    gcc-arm-embedded
   ];
 
   languages.rust = {
