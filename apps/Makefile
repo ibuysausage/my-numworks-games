@@ -8,6 +8,7 @@ EXEC_PATH := target/thumbv7em-none-eabihf/release
 build:
 	$(foreach dir, $(GAMES), \
 		cd $(ROOT_DIR)$(dir); \
+		cargo update; \
 		cargo build --release; \
 		touch $(ROOT_DIR)$(dir).nwa; \
 		cp -v $(ROOT_DIR)$(dir)/$(EXEC_PATH)/$(dir) $(ROOT_DIR)$(dir).nwa; \
