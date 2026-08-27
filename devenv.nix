@@ -11,6 +11,7 @@
   languages.rust = {
     enable = true;
     channel = "nightly";
+    targets = ["thumbv7em-none-eabihf"];
   };
 
   languages.python.enable = true;
