@@ -29,6 +29,7 @@
   languages.c.enable = true;
 
   enterShell = ''
+    export PATH="$DEVENV_ROOT/node_modules/.bin:$PATH"
     git --version
     make --version
     rustc --version
