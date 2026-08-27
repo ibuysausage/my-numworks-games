@@ -22,7 +22,6 @@
     nodejs.enable = true;
     npm.enable = true;
     npm.install.enable = true;
-    #package = pkgs.nodejs_22;
   };
 
   languages.python.enable = true;
