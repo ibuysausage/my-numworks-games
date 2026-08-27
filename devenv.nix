@@ -16,11 +16,21 @@
     targets = ["thumbv7em-none-eabihf"];
   };
 
+  # needed for nwlink
+  languages.javascript = {
+    enable = true;
+    nodejs.enable = true;
+    npm.enable = true;
+  };
+
   languages.python.enable = true;
   languages.c.enable = true;
 
   enterShell = ''
     git --version
     make --version
+    rustc --version
+    node --version
+    npm --version
   '';
 }
