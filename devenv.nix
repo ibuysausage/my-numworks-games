@@ -1,12 +1,12 @@
 {pkgs, ...}: {
-  # https://devenv.sh/basics/
-  env.GREET = "devenv";
+  # nwlink c version mismatch
+  env.CXXFLAGS = "-std=c++20";
 
   # https://devenv.sh/packages/
   packages = with pkgs; [
     git
     gnumake
-    # needed for all numworks projects
+    udev
     gcc-arm-embedded
   ];
 
@@ -21,6 +21,8 @@
     enable = true;
     nodejs.enable = true;
     npm.enable = true;
+    npm.install.enable = true;
+    #package = pkgs.nodejs_22;
   };
 
   languages.python.enable = true;

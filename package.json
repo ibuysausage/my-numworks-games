@@ -1,0 +1,11 @@
+{
+  "name": "numworks-games",
+  "version": "1.0.0",
+  "dependencies": {
+    "nwlink": "^0.0.19",
+    "usb": "^2.4.3"
+  },
+  "overrides": {
+    "node-addon-api": "^8.0.0"
+  }
+}
