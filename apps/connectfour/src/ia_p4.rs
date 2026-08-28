@@ -7,7 +7,6 @@ use crate::{
 };
 use heapless::FnvIndexMap;
 use numworks_utils::{
-    eadk::{display::push_rect_uniform, Color},
     graphical::ColorConfig,
     utils::randint,
 };
