@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   # nwlink c version mismatch
-  env.CXXFLAGS = "-std=c++20";
+  env.CXXFLAGS = "-std=c++26";
 
   # https://devenv.sh/packages/
   packages = with pkgs; [

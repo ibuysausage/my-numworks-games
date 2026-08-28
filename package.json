@@ -1,11 +1,22 @@
 {
   "name": "numworks-games",
   "version": "1.0.0",
-  "dependencies": {
-    "nwlink": "^0.0.19",
-    "usb": "^2.4.3"
+  "description": "a collection of games for numworks calculators",
+  "homepage": "https://github.com/ibuysausage/my-numworks-games#readme",
+  "bugs": {
+    "url": "https://github.com/ibuysausage/my-numworks-games/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibuysausage/my-numworks-games.git"
   },
   "overrides": {
     "node-addon-api": "^8.0.0"
+  },
+  "dependencies": {
+    "nwlink": "^0.0.19"
+  },
+  "allowScripts": {
+    "usb@2.4.3": true
   }
 }
